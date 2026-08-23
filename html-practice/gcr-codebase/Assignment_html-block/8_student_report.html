@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Report</title>
+</head>
+<body>
+
+    <!-- Main heading: School name -->
+    <h1>GLA Public School</h1>
+    <h2>Student Report Card</h2>
+
+    <table border="1" cellpadding="6">
+        <tr>
+            <!-- title attribute adds a tooltip when hovering -->
+            <th title="Name of the subject">Subject</th>
+            <th title="Marks obtained out of maximum marks">Marks Obtained</th>
+            <th title="Maximum marks for the subject">Maximum Marks</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>88</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td>95</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>79</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>85</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Data Science Foundations</td>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+
+        <!-- Total row: rowspan used on the label cell, colspan on the data cell -->
+        <tr>
+            <th rowspan="2" title="Summary of overall performance">Summary</th>
+            <td colspan="2">Total: 437 out of 500</td>
+        </tr>
+        <tr>
+            <td colspan="2">Percentage: 87.4%</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2026 GLA Public School.</p>
+    </footer>
+
+</body>
+</html>

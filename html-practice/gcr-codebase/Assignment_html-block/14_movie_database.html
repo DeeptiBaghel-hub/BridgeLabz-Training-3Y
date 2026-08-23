@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Database</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Favorite Movies</h1>
+    </header>
+
+    <main>
+        <!-- border attribute gives the table a visible border -->
+        <table border="1" cellpadding="6">
+
+            <!-- Caption appears at the top of the table -->
+            <caption>List of Top Rated Movies</caption>
+
+            <tr>
+                <th>Movie Name</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th title="Rating out of 10 on IMDB">IMDB Rating</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Inception</td>
+                <td>Sci-Fi</td>
+                <td>2010</td>
+                <td>8.8</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>The Shawshank Redemption</td>
+                <td>Drama</td>
+                <td>1994</td>
+                <td>9.3</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>Interstellar</td>
+                <td>Sci-Fi</td>
+                <td>2014</td>
+                <td>8.7</td>
+                <td><a href="#">View</a></td>
+            </tr>
+
+            <!-- Row using colspan to show a note across all columns -->
+            <tr>
+                <td colspan="5" title="Data last refreshed date">Ratings last updated: August 2026</td>
+            </tr>
+        </table>
+
+        <!-- Small note at the bottom -->
+        <p><small>Note: Ratings are approximate and may change over time.</small></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Movie Database.</p>
+    </footer>
+
+</body>
+</html>

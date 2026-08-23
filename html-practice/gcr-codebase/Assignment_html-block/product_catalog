@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+</head>
+<body>
+
+    <header>
+        <h1>Online Store - Product Catalog</h1>
+    </header>
+
+    <main>
+        <!-- Product table with an image, and colspan/rowspan usage -->
+        <table border="1" cellpadding="8">
+            <!-- Table heading row -->
+            <tr>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <!-- Product 1 -->
+            <tr>
+                <td>Wireless Mouse</td>
+                <td><img src="mouse.jpg" alt="Wireless Mouse" width="80" height="80"></td>
+                <td>Ergonomic wireless mouse with USB receiver.</td>
+                <td>Rs. 599</td>
+                <td>In Stock</td>
+            </tr>
+
+            <!-- Product 2 -->
+            <tr>
+                <td>Mechanical Keyboard</td>
+                <td><img src="keyboard.jpg" alt="Mechanical Keyboard" width="80" height="80"></td>
+                <td>RGB backlit mechanical keyboard.</td>
+                <td>Rs. 2499</td>
+                <td>In Stock</td>
+            </tr>
+
+            <!-- Product 3 -->
+            <tr>
+                <td>Laptop Stand</td>
+                <td><img src="  " alt="Laptop Stand" width="80" height="80"></td>
+                <td>Adjustable aluminum laptop stand.</td>
+                <td>Rs. 1299</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <!-- Row using colspan: a note that spans across all columns -->
+            <tr>
+                <td colspan="5">Note: All prices are inclusive of taxes.</td>
+            </tr>
+
+            <!-- Rows using rowspan: two Headphones variants share the same Description cell -->
+            <tr>
+                <td>Headphones (Black)</td>
+                <td><img src="headphones-black.jpg" alt="Black Headphones" width="80" height="80"></td>
+                <td rowspan="2">Over-ear noise cancelling headphones, available in two colors.</td>
+                <td>Rs. 1999</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Headphones (White)</td>
+                <td><img src="headphones-white.jpg" alt="White Headphones" width="80" height="80"></td>
+                <td>Rs. 1999</td>
+                <td>In Stock</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
