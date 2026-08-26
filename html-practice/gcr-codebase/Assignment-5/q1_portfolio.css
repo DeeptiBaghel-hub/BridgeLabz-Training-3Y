@@ -1,0 +1,117 @@
+/* ===== Base setup ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #faf8f5;   /* light warm background */
+  color: #2b2b2b;               /* dark text keeps contrast on light bg */
+  min-height: 100vh;            /* vh unit: full viewport height */
+  display: flex;
+  flex-direction: column;       /* footer pushed to bottom via flex */
+}
+
+/* ===== Header: fixed to top ===== */
+.site-header {
+  position: fixed;              /* stays visible when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;               /* rem unit */
+  background-color: #24313f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;                /* % unit for horizontal padding */
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;                     /* em unit */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;              /* px unit */
+}
+
+.nav-links a:hover {
+  color: #f2a154;
+}
+
+/* ===== Main content ===== */
+main {
+  flex: 1;                      /* grows to fill space, pushing footer down */
+  margin-top: 4.5rem;           /* offset for fixed header */
+  padding: 3rem 5%;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #24313f;
+}
+
+.bio-text h2 {
+  margin-top: 0;
+}
+
+.bio-text p {
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.contact-teaser {
+  background-color: #24313f;
+  color: #ffffff;
+  padding: 2.5rem 5%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75em 1.5em;
+  background-color: #f2a154;
+  color: #24313f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.contact-btn:hover {
+  background-color: #ffbf7a;
+}
+
+/* ===== Footer: always at bottom via flex layout on body ===== */
+.site-footer {
+  background-color: #1a232d;
+  color: #cfd6dd;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+}

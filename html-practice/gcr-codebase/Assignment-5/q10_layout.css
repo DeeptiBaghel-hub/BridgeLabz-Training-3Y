@@ -1,0 +1,192 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #22303c;
+  background-color: #ffffff;
+}
+
+/* ===== Header: sticky at top ===== */
+.site-header {
+  position: sticky;              /* sticky positioning */
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255,255,255,0.95);
+  padding: 1rem 6%;
+  border-bottom: 1px solid #e5e9ed;
+  outline: none;                 /* outline property present, no visible default */
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: #22303c;
+}
+
+.site-header nav a:hover {
+  color: #b85c38;
+}
+
+/* ===== Hero section ===== */
+.hero {
+  position: relative;            /* relative positioning */
+  height: 60vh;
+  min-height: 380px;
+  background-image: linear-gradient(rgba(20,20,30,0.55), rgba(20,20,30,0.55)),
+    url('https://placehold.co/1600x900?text=Hero');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: #ffffff;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== About: two columns ===== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem 6%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* ===== Services: three boxes in a row ===== */
+.services {
+  background-color: #f4f6f8;
+  padding: 4rem 6%;
+  text-align: center;
+}
+
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-box {
+  background-color: #ffffff;
+  border: 1px solid #e5e9ed;
+  border-radius: 10px;
+  padding: 2rem;
+  flex: 1 1 260px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ===== Contact section ===== */
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0.75rem 0 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7em;
+  border: 1px solid #cdd6de;
+  border-radius: 6px;
+  font-family: inherit;
+  background-color: rgba(244,246,248,0.6);   /* rgba color */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #b85c38;
+  border-color: #b85c38;
+}
+
+.contact-form button {
+  margin-top: 1.25rem;
+  padding: 0.8em;
+  background-color: #22303c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3b5064;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  position: static;
+  background-color: #1a232d;
+  color: #cfd6dd;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+}

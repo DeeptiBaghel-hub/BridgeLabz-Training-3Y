@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Studio Nine | Web Layout</title>
+<link rel="stylesheet" href="q10_layout.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">Studio Nine</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h2>Design That Works As Hard As You Do</h2>
+      <p>We build clean, considered web experiences for small teams.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Studio Nine is a two-person design shop specializing in fast,
+        accessible websites for independent businesses. We handle
+        everything from layout to launch, with an emphasis on clarity
+        over decoration.
+      </p>
+      <p>
+        Every project starts with a conversation about what the site
+        actually needs to do, not just what it should look like.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="https://placehold.co/400x300?text=Studio" alt="Our studio workspace">
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="service-row">
+      <div class="service-box">
+        <h3>Design</h3>
+        <p>Layout, typography, and visual identity built around your content.</p>
+      </div>
+      <div class="service-box">
+        <h3>Development</h3>
+        <p>Clean, semantic HTML and CSS with no unnecessary dependencies.</p>
+      </div>
+      <div class="service-box">
+        <h3>Maintenance</h3>
+        <p>Ongoing updates and support after your site goes live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Studio Nine. All rights reserved.</p>
+  </footer>
+</body>
+</html>

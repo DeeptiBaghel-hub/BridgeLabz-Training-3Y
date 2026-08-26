@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef1f5;
+  color: #26313d;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+/* ===== Grid layout for the three cards ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* three equal columns */
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.75rem;              /* box model: padding inside card */
+  margin: 0;                     /* margin handled by grid gap */
+  border: 1px solid #d7dde3;
+  border-radius: 10px;           /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);  /* shadow effect */
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  font-weight: bold;
+  color: #5a6b7b;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Highlighted Team Lead card */
+.lead-card {
+  background-color: #fff6e8;
+  border: 2px dashed #d9922f;   /* different border style */
+}
+
+/* ===== Responsive: single column below 600px ===== */
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

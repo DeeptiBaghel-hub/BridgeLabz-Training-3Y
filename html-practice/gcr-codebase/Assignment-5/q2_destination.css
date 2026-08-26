@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2c2c2c;
+  background-color: #fdfaf6;
+}
+
+header {
+  background-color: #7a2e2e;
+  color: #ffffff;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.75rem;   /* different weight/size heading #1 */
+  font-weight: 700;
+}
+
+nav {
+  background-color: #3d1f1f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0.9rem 0;
+}
+
+nav a {
+  color: #f4e3d3;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main section {
+  width: 100%;
+  padding: 4rem 10%;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 500;   /* different weight than h1 */
+  margin-top: 0;
+}
+
+section p {
+  max-width: 70ch;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* Overview: plain full-width background */
+.hero-section {
+  background-color: #f0e4d3;
+}
+
+/* Linear gradient section */
+.gradient-linear-section {
+  background: linear-gradient(120deg, #7a2e2e 0%, #b85c38 100%);
+  color: #ffffff;
+}
+
+/* Radial gradient section */
+.gradient-radial-section {
+  background: radial-gradient(circle at top left, #e8b96a, #7a2e2e 90%);
+  color: #ffffff;
+}
+
+/* Parallax-style fixed background sections */
+.parallax-section {
+  background-image: linear-gradient(rgba(20,10,10,0.55), rgba(20,10,10,0.55)),
+    url('https://placehold.co/1600x900');
+  background-size: cover;
+  background-attachment: fixed;   /* parallax-like effect */
+  background-position: center;
+  color: #ffffff;
+}
+
+.parallax-section-alt {
+  background-image: linear-gradient(rgba(10,20,10,0.5), rgba(10,20,10,0.5)),
+    url('https://placehold.co/1600x900?text=Kyoto');
+  background-size: cover;
+  background-attachment: fixed;   /* second parallax-like section */
+  background-position: center;
+  color: #ffffff;
+}
+
+.overlay-box {
+  background-color: rgba(0,0,0,0.35);
+  padding: 2rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #3d1f1f;
+  color: #f4e3d3;
+  text-align: center;
+  padding: 1.5rem 0;
+}
