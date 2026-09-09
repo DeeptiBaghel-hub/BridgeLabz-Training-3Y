@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: 'Trebuchet MS', sans-serif; color: #283618; background: #fefae0; }
+header { background: #283618; padding: 1rem; } nav { display: flex; justify-content: center; gap: .5rem; }
+nav a { padding: .7rem 1rem; border: 1px solid transparent; color: #fefae0; text-decoration: none; transition: all 0.3s ease; } nav a:hover { border-color: #dda15e; background: #606c38; } nav a.active { border-bottom: 3px solid #dda15e; background: #606c38; }
+main { flex: 1; display: grid; place-content: center; text-align: center; padding: 3rem 1rem; } h1 { font-size: clamp(2rem, 6vw, 4rem); }
+footer { padding: 1rem; text-align: center; background: #dda15e; }
+@media (max-width: 700px) { nav { flex-direction: column; align-items: stretch; } nav a { text-align: center; } }

@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 3rem 1rem; font-family: 'Trebuchet MS', sans-serif; color: #283618; background: #fefae0; }
+main { max-width: 700px; margin: auto; } .intro { color: #606c38; }
+/* Attribute selectors: match a type and an href beginning with https. */
+input[type="text"] { padding: .7rem; border: 2px solid #dda15e; border-radius: 5px; }
+a[href^="https"] { color: #bc4749; font-weight: bold; }
+/* Pseudo-classes: state, focus, and item position. */
+a:hover { background: #e9edc9; } input:focus { outline: 3px solid #606c38; }
+.items li:nth-child(odd) { background: #e9edc9; }
+/* Pseudo-elements add decorative content. */
+h1::before { content: '« '; color: #bc4749; } h1::after { content: ' »'; color: #bc4749; }
+/* Combinators: child (>), adjacent (+), general sibling (~), and descendant. */
+.note > p { font-weight: bold; } .note > p + span { border-left: 3px solid #dda15e; padding-left: 1rem; }
+.intro ~ .items { margin-top: 1.5rem; } .note p { line-height: 1.7; }
+.items { padding: 0; list-style: none; } .items li { padding: .8rem; }
+form { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1.5rem 0; } form a { padding: .4rem; }

@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; color: #fff; }
+header, footer { position: fixed; z-index: 1; width: 100%; padding: 1rem 2rem; background: #18212b; text-align: center; }
+header { top: 0; } footer { bottom: 0; }
+main { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+section { min-height: 48vh; display: grid; place-content: center; padding: 3rem; text-align: center; }
+.linear { background: linear-gradient(120deg, #e76f51, #f4a261 48%, #2a9d8f); background-attachment: fixed; }
+.radial { background: radial-gradient(circle at center, #6d597a, #355070 55%, #1b263b); }
+section p { max-width: 520px; font-size: 1.1rem; line-height: 1.6; }

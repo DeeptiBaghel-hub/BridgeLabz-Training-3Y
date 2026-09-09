@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Georgia, serif; color: #233142; background: #f4f1ea; }
+header, footer { text-align: center; padding: 2rem 1rem; }
+h1, h2, p { margin-top: 0; }
+.box-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; padding: 2rem; }
+.demo { width: 190px; min-height: 160px; background: #fffdf8; transition: border-color .3s ease; }
+.demo:hover { border-color: #d1495b; }
+.solid { padding: 1rem; border: 5px solid #233142; }
+.dashed { padding: 1.5rem; border: 5px dashed #3f7d6b; }
+.double { padding: 2rem; border: 8px double #d17a22; }
+.groove { padding: .75rem 2rem; border: 8px groove #7b506f; border-radius: 24px; }
+footer { color: #53606e; }
