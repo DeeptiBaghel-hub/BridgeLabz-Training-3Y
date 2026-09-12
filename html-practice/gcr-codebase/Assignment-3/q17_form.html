@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q17 - Form Page</title>
+</head>
+<body>
+    <!-- Q17: This form loads result.html inside the iframe below after Submit is clicked -->
+    <h1>Simple Submission Form</h1>
+
+    <form action="q17_result.html" method="get" target="resultFrame">
+        <label for="message">Enter Text:</label>
+        <input type="text" id="message" name="message" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <iframe
+        name="resultFrame"
+        title="Result Frame"
+        src="about:blank"
+        width="500"
+        height="150">
+    </iframe>
+</body>
+</html>

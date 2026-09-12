@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Course Registration</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <!-- Fieldset groups the personal detail fields together -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- Fieldset groups the course selection field -->
+            <fieldset>
+                <legend>Course Selection</legend>
+
+                <label for="course">Choose a Course:</label>
+                <select id="course" name="course">
+                    <option value="webdev">Web Development</option>
+                    <option value="datascience">Data Science</option>
+                    <option value="aiml">AI and Machine Learning</option>
+                    <option value="cloud">Cloud Computing</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- Table showing the available course schedules -->
+        <h2>Available Course Schedules</h2>
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Dr. Vikash Sawan</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Prof. Verma</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 1:00 PM</td>
+                <td>Dr. Gupta</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Course Registration Portal.</p>
+    </footer>
+
+</body>
+</html>

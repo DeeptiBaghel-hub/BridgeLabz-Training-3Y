@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Hierarchy - Nested List</title>
+</head>
+<body>
+
+    <header>
+        <h1>University Structure: University &rarr; Departments &rarr; Courses &rarr; Topics</h1>
+    </header>
+
+    <main>
+        <!-- Top level: University, using an unordered list -->
+        <ul>
+            <li>GLA University
+                <!-- Second level: Departments, using an unordered list -->
+                <ul>
+                    <li>Department of Computer Science
+                        <!-- Third level: Courses, using an ordered list -->
+                        <ol>
+                            <li>B.Tech Computer Science
+                                <!-- Fourth level: Topics, using an unordered list -->
+                                <ul>
+                                    <li>Data Structures</li>
+                                    <li>Foundations of Data Science</li>
+                                    <li>Web Development</li>
+                                </ul>
+                            </li>
+                            <li>M.Tech Computer Science
+                                <ul>
+                                    <li>Advanced Algorithms</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li>Department of Electronics
+                        <ol>
+                            <li>B.Tech Electronics and Communication
+                                <ul>
+                                    <li>Digital Circuits</li>
+                                    <li>Signal Processing</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GLA University.</p>
+    </footer>
+
+</body>
+</html>
