@@ -1,0 +1,20 @@
+/* Element selector: styles every paragraph. */
+p { line-height: 1.6; }
+/* Class selector: styles reusable highlighted text. */
+.highlight { background: #fff0a8; padding: 8px; }
+/* ID selector: styles one special paragraph. */
+#special { color: #c62828; font-weight: bold; }
+/* Attribute selector: styles links with an href. */
+a[href] { color: #1565c0; font-weight: bold; }
+/* Child combinator: selects only direct children of main. */
+main > p { margin-left: 20px; }
+/* Descendant combinator: selects list items inside selector-area. */
+.selector-area li { color: #2e7d32; }
+/* Adjacent sibling: selects the paragraph immediately after h2. */
+h2 + p { border-left: 4px solid #ef6c00; padding-left: 10px; }
+/* General sibling: selects all p elements after h2. */
+h2 ~ p { background: #fff8e1; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #263238; }
+header, footer { text-align: center; background: #37474f; color: white; padding: 18px; }
+main { max-width: 750px; margin: 35px auto; padding: 25px; background: white; border-radius: 8px; }
+.selector-area { margin-top: 25px; padding: 15px; border: 1px solid #cfd8dc; }

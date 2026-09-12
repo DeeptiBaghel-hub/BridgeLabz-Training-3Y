@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; text-align: center; background: #e8eaf6; color: #283593; }
+header, footer { background: #3949ab; color: white; padding: 18px; }
+.animation-area { min-height: 480px; display: flex; justify-content: center; align-items: center; gap: 55px; flex-wrap: wrap; overflow: hidden; }
+.moving-box { padding: 25px; background: #00897b; color: white; animation: move-box 3s ease-in-out infinite alternate; }
+.ball { width: 70px; height: 70px; padding-top: 25px; border-radius: 50%; background: #f4511e; color: white; animation: bounce 1.5s ease-in-out infinite; animation-delay: .5s; }
+.color-text { animation: change-color 3s ease-in-out infinite; animation-iteration-count: 4; animation-direction: alternate; }
+@keyframes move-box { from { transform: translateX(-120px); } to { transform: translateX(120px); } }
+@keyframes bounce { 0%, 100% { transform: translateY(-40px); } 50% { transform: translateY(40px); } }
+@keyframes change-color { from { color: #c62828; } to { color: #2e7d32; } }
+@media (max-width: 600px) { .animation-area { gap: 25px; flex-direction: column; } }

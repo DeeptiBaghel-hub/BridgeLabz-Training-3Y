@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; text-align: center; background: #fce4ec; color: #4a148c; }
+header, footer { background: #ad1457; color: white; padding: 18px; }
+.effects { min-height: 450px; padding: 30px; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; gap: 20px; }
+.effect-button { padding: 18px 30px; border: 0; border-radius: 7px; color: white; font-size: 16px; cursor: pointer; transition: transform .3s ease, background-color .3s ease, box-shadow .3s ease; }
+.red { background: #e53935; }.blue { background: #1e88e5; }.green { background: #43a047; }
+.effect-button:hover { transform: scale(1.1); background: #6a1b9a; box-shadow: 0 8px 15px #b0bec5; }
+.effect-button:focus { outline: 3px solid #ffb300; outline-offset: 4px; }
+.effect-button:active { transform: scale(.95); }
