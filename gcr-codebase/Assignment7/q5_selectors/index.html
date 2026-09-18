@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Advanced CSS Selectors Demo</h1>
+  </header>
+
+  <main>
+
+    <section class="demo-section">
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Text input">
+      <br><br>
+      <a href="https://example.com">A link starting with https</a>
+    </section>
+
+    <section class="demo-section">
+      <h2>Pseudo-classes</h2>
+      <p>Hover over this box: <span class="hover-box">Hover me</span></p>
+      <input type="text" placeholder="Focus me" class="focus-box">
+
+      <ul class="fruit-list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Dates</li>
+      </ul>
+    </section>
+
+    <section class="demo-section">
+      <h2 class="fancy-heading">Pseudo-elements Example</h2>
+    </section>
+
+    <section class="demo-section combinator-demo">
+      <h2>Combinators</h2>
+      <div class="parent">
+        Parent
+        <p>Direct child paragraph (>)</p>
+        <span>Adjacent sibling span (+)</span>
+        <span>General sibling span (~)</span>
+        <div class="descendant-wrap">
+          <p>Descendant paragraph (space)</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Assignment 7 - Question 5</p>
+  </footer>
+
+</body>
+</html>

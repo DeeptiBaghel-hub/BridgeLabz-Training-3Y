@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    margin: auto;
+    max-width: 750px;
+}
+
+@media (max-width: 700px) {
+    .content {
+        padding: 50px 20px;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+}

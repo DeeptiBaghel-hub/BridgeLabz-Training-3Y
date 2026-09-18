@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+.article {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.serif-heading {
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.first-para {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.first-para::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.second-para::first-line {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.second-para {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+mark {
+  background-color: #FFEB3B;
+  color: #333;
+  padding: 2px 4px;
+}
+
+strong {
+  color: #F44336;
+}
+
+em {
+  color: #9C27B0;
+}

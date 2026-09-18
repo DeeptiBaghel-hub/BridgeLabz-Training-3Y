@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+.demo-section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+}
+
+a[href^="https"] {
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.hover-box {
+  background-color: #FF9800;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.hover-box:hover {
+  background-color: #F44336;
+  color: white;
+}
+
+.focus-box:focus {
+  outline: none;
+  border-color: #9C27B0;
+  box-shadow: 0 0 5px #9C27B0;
+}
+
+.fruit-list li:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.fruit-list li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.fancy-heading::before {
+  content: "★ ";
+  color: gold;
+}
+.fancy-heading::after {
+  content: " ★";
+  color: gold;
+}
+
+.parent {
+  border: 2px dashed #999;
+  padding: 15px;
+  text-align: left;
+}
+
+.parent > p {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.parent p + span {
+  color: #2196F3;
+}
+
+.parent p ~ span {
+  color: #FF5722;
+}
+
+.descendant-wrap p {
+  color: #9C27B0;
+  font-style: italic;
+}
