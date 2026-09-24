@@ -1,0 +1,19 @@
+body {
+    background: #fbfaf7;
+    color: #2e2924;
+}
+
+.product-card {
+    transition: transform .25s ease, box-shadow .25s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 .75rem 1.5rem rgba(46, 41, 36, .14) !important;
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+}

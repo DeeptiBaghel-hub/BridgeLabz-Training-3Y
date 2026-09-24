@@ -1,0 +1,33 @@
+:root {
+    --bs-primary: #d85b3f;
+    --bs-primary-rgb: 216, 91, 63;
+    --bs-font-sans-serif: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    color: #27312d;
+    background: #fffaf5;
+}
+
+h1,
+h2,
+.brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.card {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1.5rem rgba(86, 58, 40, .08);
+}
+
+.card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.footer {
+    background: #f1e8df;
+}

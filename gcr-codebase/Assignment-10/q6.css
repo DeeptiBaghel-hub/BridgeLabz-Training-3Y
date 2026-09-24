@@ -1,0 +1,11 @@
+body {
+    color: #1d2939;
+}
+
+.summary-well {
+    border-style: dashed !important;
+}
+
+.alert {
+    border: 0;
+}

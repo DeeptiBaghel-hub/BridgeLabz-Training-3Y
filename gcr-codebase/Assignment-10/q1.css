@@ -1,0 +1,37 @@
+:root {
+    --brand-blue: #1769aa;
+    --soft-blue: #eaf4ff;
+}
+
+body {
+    color: #14213d;
+    background: #f7fbff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #f7fbff 0%, var(--soft-blue) 100%);
+}
+
+.hero-visual {
+    background: #ffffff;
+    border: 1px solid #d8e8f7;
+}
+
+.progress-bar {
+    background-color: var(--brand-blue);
+}
+
+.metric {
+    padding: 1.25rem;
+    background: #f1f7fc;
+    border-radius: 0.75rem;
+}
+
+.metric strong,
+.metric small {
+    display: block;
+}
+
+.metric strong {
+    font-size: 1.75rem;
+}

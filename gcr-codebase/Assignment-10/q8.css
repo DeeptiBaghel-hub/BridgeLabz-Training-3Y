@@ -1,0 +1,29 @@
+body {
+    color: #202b3c;
+}
+
+.plan-card {
+    border: 0;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2.5rem rgba(31, 54, 89, .16) !important;
+}
+
+.plan-card.featured {
+    transform: scale(1.03);
+}
+
+.plan-card.featured:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+@media (max-width: 767.98px) {
+
+    .plan-card.featured,
+    .plan-card.featured:hover {
+        transform: none;
+    }
+}
