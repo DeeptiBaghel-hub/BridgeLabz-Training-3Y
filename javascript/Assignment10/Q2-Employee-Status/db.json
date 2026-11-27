@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Ava Sharma",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Noah Verma",
+      "status": "inactive"
+    },
+    {
+      "id": "3",
+      "name": "Mia Singh",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "name": "Liam Patel",
+      "status": "inactive"
+    },
+    {
+      "id": "5",
+      "name": "Zoe Gupta",
+      "status": "active"
+    }
+  ]
+}
