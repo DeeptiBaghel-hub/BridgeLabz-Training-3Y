@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ava"
+    },
+    {
+      "id": "2",
+      "name": "Noah"
+    },
+    {
+      "id": "3",
+      "name": "Mia"
+    },
+    {
+      "id": "4",
+      "name": "Liam"
+    },
+    {
+      "id": "5",
+      "name": "Zoe"
+    }
+  ],
+  "orders": [
+    {
+      "id": "101",
+      "total": 120
+    },
+    {
+      "id": "102",
+      "total": 85
+    },
+    {
+      "id": "103",
+      "total": 240
+    },
+    {
+      "id": "104",
+      "total": 59
+    },
+    {
+      "id": "105",
+      "total": 175
+    }
+  ],
+  "products": [
+    {
+      "id": "201",
+      "name": "Keyboard",
+      "price": 45
+    },
+    {
+      "id": "202",
+      "name": "Mouse",
+      "price": 25
+    },
+    {
+      "id": "203",
+      "name": "Monitor",
+      "price": 220
+    },
+    {
+      "id": "204",
+      "name": "Webcam",
+      "price": 60
+    },
+    {
+      "id": "205",
+      "name": "Dock",
+      "price": 90
+    }
+  ]
+}
